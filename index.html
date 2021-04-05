@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
 
-    
+<!-- or the one installed in node_modules directory, -->
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+
+<!-- or the reference on CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
     <title>Handsfree.io</title>
     <style>
         html {
@@ -55,48 +61,48 @@
             </div>        
         </div>
         <!-- how it works -->
-        <div id="howitworks" class="h-auto pb-10 w-screen bg-purple-500 flex flex-col">
+        <div id="howitworks" class="h-screen pb-10 w-screen bg-purple-500 flex flex-col">
             <h1 class="text-white text-5xl text-center fonts-mono pl-16 pt-6">How it Works?</h1>
-            <div class="chips grid grid-flow-row grid-cols-3 grid-rows-2 gap-4 px-64">
-                <div class="h-auto bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
-                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">1</div>
-                    <img class="w-48 h-40" src="/handsfree.io/photos/openmouth.png" alt="">
-                    <h3 class="text-white text-lg fonts-mono">Open mouth to activate cursor</h3>
+            <div class="splide pt-16">
+                <div class="splide__track">
+                    <ul class="splide__list space-x-2">
+                        <div class="splide__slide h-auto splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                            <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">1</div>
+                            <img class="w-48 h-40" src="/handsfree.io/photos/openmouth.png" alt="">
+                            <h3 class="text-white text-lg fonts-mono">Open mouth to activate cursor</h3>
+                        </div>
+        
+                        <div class="splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                            <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">2</div>
+                            <img class="w-48 h-40" src="/handsfree.io/photos/rightblink.png" alt="">
+                            <h3 class="text-white text-lg fonts-mono">Blink right eye for right click</h3>
+                        </div>
+        
+                        <div class="splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                            <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">3</div>
+                            <img class="w-48 h-40" src="/handsfree.io/photos/leftblink.png" alt="">
+                            <h3 class="text-white text-lg fonts-mono">Blink left eye for left click</h3>
+                        </div>
+        
+                        <div class="splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                            <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">4</div>
+                            <img class="w-48 h-40" src="/handsfree.io/photos/squinting.png" alt="">
+                            <h3 class="text-white text-lg fonts-mono">Squint eyes to activate scroll</h3>
+                        </div>
+        
+                        <div class="splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                            <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">5</div>
+                                <img class="w-48 h-40" src="/handsfree.io/photos/scroll.png" alt="">
+                            <h3 class="text-white text-lg fonts-mono">Move your head up and down to move cursor vertically</h3>
+                        </div>
+        
+                        <div class="splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                            <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">6</div>
+                                <img class="w-48 h-40" src="/handsfree.io/photos/scroll1.png" alt="">
+                            <h3 class="text-white text-lg fonts-mono">Move your head right to left to move cursor horizontally</h3>
+                        </div>
+                    </ul>
                 </div>
-
-                <div class="bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
-                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">2</div>
-                    <img class="w-48 h-40" src="/handsfree.io/photos/rightblink.png" alt="">
-                    <h3 class="text-white text-lg fonts-mono">Blink right eye for right click</h3>
-                </div>
-
-                <div class="bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
-                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">3</div>
-                    <img class="w-48 h-40" src="/handsfree.io/photos/leftblink.png" alt="">
-                    <h3 class="text-white text-lg fonts-mono">Blink left eye for left click</h3>
-                </div>
-
-                <div class="bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
-                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">4</div>
-                    <img class="w-48 h-40" src="/handsfree.io/photos/squinting.png" alt="">
-                    <h3 class="text-white text-lg fonts-mono">Squint eyes to activate scroll</h3>
-                </div>
-
-                <div class="bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
-                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">5</div>
-                        <img class="w-48 h-40" src="/handsfree.io/photos/scroll.png" alt="">
-                    <h3 class="text-white text-lg fonts-mono">Move your head up and down to move cursor vertically</h3>
-                </div>
-
-                <div class="bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
-                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">6</div>
-                        <img class="w-48 h-40" src="/handsfree.io/photos/scroll1.png" alt="">
-                    <h3 class="text-white text-lg fonts-mono">Move your head right to left to move cursor horizontally</h3>
-                </div>
-
-               
-                
-
             </div>
         </div>
         <!-- statistics -->
@@ -113,5 +119,20 @@
         </div>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <script>
+            document.addEventListener( 'DOMContentLoaded', function () {
+                new Splide( '.splide', {
+                    perPage: 3,
+                    padding: {
+                    right: '5rem',
+                    left : '5rem',
+                },
+                    rewind : true,
+                } ).mount();
+            } );
+    </script>
+
 </body>
 </html>
