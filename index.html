@@ -4,22 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    
+
+    
     <title>Handsfree.io</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-    <!--Intro div -->
-    <div class="h-screen w-screen bg-gray-400">
-        sonia
+    
+    <div class="overflow-x-hidden">
+        <nav class="flex  justify-between bg-purple-600 w-screen h-16">
+            <ul class="flex justify-start items-center content-center h-16 space-x-20 ml-48">
+
+                <li class="flex text-white text-2xl fonts-mono font-semibold"><span ><img src="https://img.icons8.com/color/50/000000/facial-recognition-scan.png"/></span>HandsFree.io</li>
+            </ul>
+            <ul class="flex justify-end items-center content-center h-16 space-x-20 mr-20">
+                <a href="#aboutsec"><li  class="flex text-white text-xl fonts-mono">About Us</li></a>
+                <a href="#howitworks"><li  class="flex text-white text-xl fonts-mono">How it works?</li></a>
+                <li  class="flex text-white text-xl fonts-mono">Statistics</li>
+                <li  class="flex text-white text-xl fonts-mono">Contact us</li>
+            </ul>
+        </nav>
+        <!--Intro div -->
+        <div class="h-screen w-screen bg-purple-500	flex ">
+            <div class="w-1/2  ">
+                <h1 class="pt-20 pl-32 text-white text-4xl font-semibold">Welcome to <span class="text-purple-700">HandsFree.io</span></h1>
+                <p class=" pt-8 pl-32 fonts-mono text-justify text-white text-2xl font-light w-full ">A Program which can help people with disability to operate computer systems, just by using their facial expressions. A highly interactive and easy-to-use program. Download now to get started!</p>
+                <div class="ml-32 border hover:bg-purple-700  mt-10 justify-center flex alignborder-white rounded-lg w-64 h-16">
+                    <button class="font-semibold  py-4 px-2  coursor-pointer  text-2xl text-white" ><span class="pr-2"><i class="fas fa-download"></i></span>Download</button>
+                </div>
+            </div>
+            <img class="w-1/2" src="/handsfree.io/photos/intro.png" alt="">
+        </div>
+        
+        <!-- product descriptionabout -->
+        <div id="aboutsec" class="h-screen w-screen bg-purple-600 flex">
+            <div class="h-full w-2/5">
+                <img class="h-full" src="/handsfree.io/photos/description.png" alt="">
+            </div>
+            <div class="h-full w-3/5">
+                <h1 class="pt-32 text-white text-5xl font-semibold">About Us</h1>
+                <p class="text-white text-xl font-light fonts-mono pt-6 pr-32 text-justify	">In recent years, a number of researchers are developing different kinds of assistive devices for differently-abled people. In this project, we will be using the movement of illuminant markers through facial expressions to control the cursor movement in computer applications. 
+                    In our project we will be using a set of five facial expressions for controlling the cursor movement in the left and right direction, up and down and click, respectively. A conventional web-camera will be used for capturing</p>
+            </div>        
+        </div>
+        <!-- how it works -->
+        <div id="howitworks" class="h-auto pb-10 w-screen bg-purple-500 flex flex-col">
+            <h1 class="text-white text-5xl text-center fonts-mono pl-16 pt-6">How it Works?</h1>
+            <div class="chips grid grid-flow-row grid-cols-3 grid-rows-2 gap-4 px-64">
+                <div class="h-auto bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">1</div>
+                    <img class="w-48 h-40" src="/handsfree.io/photos/openmouth.png" alt="">
+                    <h3 class="text-white text-lg fonts-mono">Open mouth to activate cursor</h3>
+                </div>
+
+                <div class="bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">2</div>
+                    <img class="w-48 h-40" src="/handsfree.io/photos/rightblink.png" alt="">
+                    <h3 class="text-white text-lg fonts-mono">Blink right eye for right click</h3>
+                </div>
+
+                <div class="bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">3</div>
+                    <img class="w-48 h-40" src="/handsfree.io/photos/leftblink.png" alt="">
+                    <h3 class="text-white text-lg fonts-mono">Blink left eye for left click</h3>
+                </div>
+
+                <div class="bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">4</div>
+                    <img class="w-48 h-40" src="/handsfree.io/photos/squinting.png" alt="">
+                    <h3 class="text-white text-lg fonts-mono">Squint eyes to activate scroll</h3>
+                </div>
+
+                <div class="bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">5</div>
+                        <img class="w-48 h-40" src="/handsfree.io/photos/scroll.png" alt="">
+                    <h3 class="text-white text-lg fonts-mono">Move your head up and down to move cursor vertically</h3>
+                </div>
+
+                <div class="bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                    <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">6</div>
+                        <img class="w-48 h-40" src="/handsfree.io/photos/scroll1.png" alt="">
+                    <h3 class="text-white text-lg fonts-mono">Move your head right to left to move cursor horizontally</h3>
+                </div>
+
+               
+                
+
+            </div>
+        </div>
+        <!-- statistics -->
+        <div class="h-screen w-screen bg-gray-400">
+            Intro ka div
+        </div>
+        <!-- form for download product-->
+        <div class="h-screen w-screen bg-gray-400">
+            Intro ka div
+        </div>
+        <!-- footer with ❤ mini -->
+        <div class="h-screen w-screen bg-gray-400">
+            Intro ka div
+        </div>
     </div>
-    
-    <!-- product descriptionabout -->
-    
-    <!-- how it works -->
-    
-    <!-- statistics -->
-    <!-- form for download product-->
-    <!-- footer with ❤ mini -->
     
 </body>
 </html>
