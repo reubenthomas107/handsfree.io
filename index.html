@@ -19,14 +19,32 @@
     <style>
         html {
             scroll-behavior: smooth;
+        }#introimg,#dwnlbtn{
+            animation: fadeInAnimation ease 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
         }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        #welcome {
+            animation: fadeInAnimation ease 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+   
+            }
     </style>
 </head>
 <body>
     
     <div class="overflow-x-hidden">
         <nav class="flex  justify-between bg-purple-600 w-screen h-16">
-            <ul class="flex justify-start items-center content-center h-16 space-x-20 ml-32">
+            <ul class="flex  justify-start items-center content-center h-16 space-x-20 ml-32">
 
                 <a href="index.html"><li class="flex justify-center align-center items-center text-white text-2xl fonts-mono font-semibold"><span ><img src="https://img.icons8.com/color/50/000000/facial-recognition-scan.png"/></span>HandsFree.io</li></a>
             </ul>
@@ -41,14 +59,14 @@
         <!--Intro div -->
         <div class="h-screen w-screen bg-purple-500	flex ">
             <div class="w-1/2  ">
-                <h1 class="pt-20 pl-32 text-white text-4xl font-semibold">Welcome to <span class="text-purple-700">HandsFree.io</span></h1>
-                <p class=" pt-8 pl-32 fonts-mono text-justify text-white text-2xl font-light w-full ">A Program which can help people with disability to operate computer systems, just by using their facial expressions. A highly interactive and easy-to-use program. Download now to get started!</p>
-                <div class="ml-32 items-center align-center border hover:bg-purple-700  mt-10 justify-center flex alignborder-white rounded-lg w-64 h-16">
+                <h1 id="welcome" class="pt-20 pl-32 text-white text-4xl font-semibold">Welcome to <span class="text-purple-700">HandsFree.io</span></h1>
+                <p id="welcome" class=" pt-8 pl-32 fonts-mono text-justify text-white text-2xl font-light w-full ">A Program which can help people with disability to operate computer systems, just by using their facial expressions. A highly interactive and easy-to-use program. Download now to get started!</p>
+                <div id="dwnlbtn" class="ml-32 items-center align-center border hover:bg-purple-700  mt-10 justify-center flex alignborder-white rounded-lg w-64 h-16">
                     <a href="handsfree.io.zip"><button class="focus:outline-none  font-semibold  py-4 px-2  coursor-pointer  text-2xl text-white" ><span class="pr-2"><i class="fas fa-download"></i></span>Download</button>
                     </a>               
                 </div>
             </div>
-            <img class="w-1/2" src="/photos/intro.png" alt="">
+            <img id="introimg" class="w-1/2" src="/photos/intro.png" alt="">
         </div>
         
         <!-- product descriptionabout -->
@@ -64,14 +82,14 @@
         </div>
         <!-- how it works -->
         <div id="howitworks" class="font-semibold h-screen pb-10 w-screen bg-purple-500 flex flex-col">
-            <h1 class="text-white text-5xl text-center fonts-mono pl-16 pt-6">How it Works?</h1>
-            <div class="splide pt-16">
+            <h1 class="text-white text-5xl text-center fonts-mono pl-16 pt-20">How it Works?</h1>
+            <div class="splide pt-24">
                 <div class="splide__track">
                     <ul class="splide__list space-x-2">
                         <div class="splide__slide h-auto splide__slide bg-purple-400 text-center text-center shadow-lg shadow-lg rounded-md p-6 w-64">
                             <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">1</div>
                             <div class="flex w-full align-center justify-center ">
-                                <img class="align-center justify-center w-60 h-60" src="/photos/openmouth.png" alt="">
+                                <img class="align-center justify-center w-48 h-40 " src="/photos/openmouth.png" alt="">
                             </div>
                             <h3 class="text-white text-lg fonts-mono">Open mouth to activate cursor</h3>
                         </div>
