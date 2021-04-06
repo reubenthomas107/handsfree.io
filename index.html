@@ -26,15 +26,16 @@
     
     <div class="overflow-x-hidden">
         <nav class="flex  justify-between bg-purple-600 w-screen h-16">
-            <ul class="flex justify-start items-center content-center h-16 space-x-20 ml-48">
+            <ul class="flex justify-start items-center content-center h-16 space-x-20 ml-32">
 
-                <li class="flex text-white text-2xl fonts-mono font-semibold"><span ><img src="https://img.icons8.com/color/50/000000/facial-recognition-scan.png"/></span>HandsFree.io</li>
+                <a href="index.html"><li class="flex justify-center align-center items-center text-white text-2xl fonts-mono font-semibold"><span ><img src="https://img.icons8.com/color/50/000000/facial-recognition-scan.png"/></span>HandsFree.io</li></a>
             </ul>
-            <ul class="flex justify-end items-center content-center h-16 space-x-20 mr-20">
+            <ul class="flex justify-end items-center content-center h-16 space-x-12 mr-12">
                 <a href="#aboutsec"><li  class="flex text-white text-xl fonts-mono">About Us</li></a>
                 <a href="#howitworks"><li  class="flex text-white text-xl fonts-mono">How it works?</li></a>
-                <li  class="flex text-white text-xl fonts-mono">Statistics</li>
-                <li  class="flex text-white text-xl fonts-mono">Contact us</li>
+                <a href="/statistics.html" ><li  class="flex text-white text-xl fonts-mono">Statistics</li></a>
+                <a href="#contactus"><li  class="flex text-white text-xl fonts-mono">Contact Us</li></a>
+                <a href="/test.html"><li  class="border px-4 py-2 rounded-md flex text-white text-xl fonts-mono">Demo</li></a>
             </ul>
         </nav>
         <!--Intro div -->
@@ -42,17 +43,18 @@
             <div class="w-1/2  ">
                 <h1 class="pt-20 pl-32 text-white text-4xl font-semibold">Welcome to <span class="text-purple-700">HandsFree.io</span></h1>
                 <p class=" pt-8 pl-32 fonts-mono text-justify text-white text-2xl font-light w-full ">A Program which can help people with disability to operate computer systems, just by using their facial expressions. A highly interactive and easy-to-use program. Download now to get started!</p>
-                <div class="ml-32 border hover:bg-purple-700  mt-10 justify-center flex alignborder-white rounded-lg w-64 h-16">
-                    <button class="font-semibold  py-4 px-2  coursor-pointer  text-2xl text-white" ><span class="pr-2"><i class="fas fa-download"></i></span>Download</button>
+                <div class="ml-32 items-center align-center border hover:bg-purple-700  mt-10 justify-center flex alignborder-white rounded-lg w-64 h-16">
+                    <a href="handsfree.io.zip"><button class="focus:outline-none  font-semibold  py-4 px-2  coursor-pointer  text-2xl text-white" ><span class="pr-2"><i class="fas fa-download"></i></span>Download</button>
+                    </a>               
                 </div>
             </div>
-            <img class="w-1/2" src="/handsfree.io/photos/intro.png" alt="">
+            <img class="w-1/2" src="/photos/intro.png" alt="">
         </div>
         
         <!-- product descriptionabout -->
         <div id="aboutsec" class="h-screen w-screen bg-purple-600 flex">
             <div class="h-full w-2/5">
-                <img class="h-full" src="/handsfree.io/photos/description.png" alt="">
+                <img class="h-full" src="/photos/description.png" alt="">
             </div>
             <div class="h-full w-3/5">
                 <h1 class="pt-32 text-white text-5xl font-semibold">About Us</h1>
@@ -61,61 +63,114 @@
             </div>        
         </div>
         <!-- how it works -->
-        <div id="howitworks" class="h-screen pb-10 w-screen bg-purple-500 flex flex-col">
+        <div id="howitworks" class="font-semibold h-screen pb-10 w-screen bg-purple-500 flex flex-col">
             <h1 class="text-white text-5xl text-center fonts-mono pl-16 pt-6">How it Works?</h1>
             <div class="splide pt-16">
                 <div class="splide__track">
                     <ul class="splide__list space-x-2">
-                        <div class="splide__slide h-auto splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                        <div class="splide__slide h-auto splide__slide bg-purple-400 text-center text-center shadow-lg shadow-lg rounded-md p-6 w-64">
                             <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">1</div>
-                            <img class="w-48 h-40" src="/handsfree.io/photos/openmouth.png" alt="">
+                            <div class="flex w-full align-center justify-center ">
+                                <img class="align-center justify-center w-60 h-60" src="/photos/openmouth.png" alt="">
+                            </div>
                             <h3 class="text-white text-lg fonts-mono">Open mouth to activate cursor</h3>
                         </div>
         
-                        <div class="splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                        <div class="splide__slide bg-purple-400 text-center shadow-lg shadow-lg rounded-md p-6 w-64">
                             <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">2</div>
-                            <img class="w-48 h-40" src="/handsfree.io/photos/rightblink.png" alt="">
+                            <div class="flex w-full align-center justify-center ">
+                                <img class="w-48 h-40" src="/photos/rightblink.png" alt="">
+                            </div>
+                            
                             <h3 class="text-white text-lg fonts-mono">Blink right eye for right click</h3>
                         </div>
         
-                        <div class="splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                        <div class="splide__slide bg-purple-400 text-center shadow-lg shadow-lg rounded-md p-6 w-64">
                             <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">3</div>
-                            <img class="w-48 h-40" src="/handsfree.io/photos/leftblink.png" alt="">
-                            <h3 class="text-white text-lg fonts-mono">Blink left eye for left click</h3>
+                            
+                            <div class="flex w-full align-center justify-center ">
+                                <img class="w-48 h-40" src="/photos/leftblink.png" alt="">
+                            </div>                            <h3 class="text-white text-lg fonts-mono">Blink left eye for left click</h3>
                         </div>
         
-                        <div class="splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                        <div class="splide__slide bg-purple-400 text-center shadow-lg shadow-lg rounded-md p-6 w-64">
                             <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">4</div>
-                            <img class="w-48 h-40" src="/handsfree.io/photos/squinting.png" alt="">
-                            <h3 class="text-white text-lg fonts-mono">Squint eyes to activate scroll</h3>
+                            <div class="flex w-full align-center justify-center ">
+                                <img class="w-48 h-40" src="/photos/squinting.png" alt="">
+                            </div>                            <h3 class="text-white text-lg fonts-mono">Squint eyes to activate scroll</h3>
                         </div>
         
-                        <div class="splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                        <div class="splide__slide bg-purple-400 text-center shadow-lg shadow-lg rounded-md p-6 w-64">
                             <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">5</div>
-                                <img class="w-48 h-40" src="/handsfree.io/photos/scroll.png" alt="">
-                            <h3 class="text-white text-lg fonts-mono">Move your head up and down to move cursor vertically</h3>
+                            <div class="flex w-full align-center justify-center ">
+                                <img class="w-48 h-40" src="/photos/scroll.png" alt="">
+                            </div>                            <h3 class="text-white text-lg fonts-mono">Move your head up and down to move cursor vertically</h3>
                         </div>
         
-                        <div class="splide__slide bg-purple-400 shadow-lg shadow-lg rounded-md p-6 w-64">
+                        <div class="splide__slide bg-purple-400 text-center shadow-lg shadow-lg rounded-md p-6 w-64">
                             <div class="flex justify-center align-center items-center bg-white rounded-full text-purple-600 h-12 w-12">6</div>
-                                <img class="w-48 h-40" src="/handsfree.io/photos/scroll1.png" alt="">
+                            <div class="flex w-full align-center justify-center ">
+                                <img class="w-48 h-40" src="/photos/scroll1.png" alt="">
+                            </div>                            
                             <h3 class="text-white text-lg fonts-mono">Move your head right to left to move cursor horizontally</h3>
                         </div>
                     </ul>
                 </div>
             </div>
         </div>
-        <!-- statistics -->
-        <div class="h-screen w-screen bg-gray-400">
-            Intro ka div
-        </div>
-        <!-- form for download product-->
-        <div class="h-screen w-screen bg-gray-400">
-            Intro ka div
+        <!-- Contact US-->
+        <div id="contactus" class="flex flex-col py-6 space-x-10 h-screen bg-purple-600 items-center justify-center align-center w-screen ">
+            <h1 class="text-white text-5xl font-semibold text-center fonts-mono pl-16">Contact Us</h1>
+            <div class="pt-6 flex w-screen items-center justify-center align-center space-x-16">
+                <div class="py-10 h-1/2 bg-purple-500 rounded-md shadow-lg w-1/4 flex flex-col items-center content-center align-center justify-center">
+                    <img src="https://img.icons8.com/doodle/64/000000/phone.png"/>
+                    <div class="w-full py-8 fonts-sans text-white flex justify-center align-center items-center flex-col">
+                        <h1 class="py-4 text-xl font-semibold fonts-mono tracking-widest">BY PHONE</h1>
+                        <p class="text-md ">(Monday to Friday, 9am to 6pm PST)</p>
+                        <h1 class="text-xl mt-4">South Mumbai Toll Free:</h1>
+                        <p class="text-xl">+91-1234848191</p>
+                        <h1 class="text-xl mt-4">International</h1>
+                        <p class="text-xl">1-604-5185-8481</p>
+                    </div>
+                </div>
+                <div class="py-10 h-1/2 bg-purple-500 rounded-md shadow-lg w-1/4 flex flex-col items-center content-center align-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="64" height="64"
+                    viewBox="0 0 172 172"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="none" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"></path><g><path d="M153.1875,65.84375v-33.59375c0,-3.7625 -2.95625,-6.71875 -6.71875,-6.71875h-114.21875c-3.7625,0 -6.71875,2.95625 -6.71875,6.71875v33.59375l63.82813,53.75z" fill="#ffffff" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M153.1875,65.84375v-33.59375c0,-3.7625 -2.95625,-6.71875 -6.71875,-6.71875h-87.34375h-26.875c-3.7625,0 -6.71875,2.95625 -6.71875,6.71875v6.71875v12.09375" fill="none" stroke="#444b54" stroke-width="8.0625" stroke-linecap="round" stroke-linejoin="round"></path><path d="M146.46875,153.1875h-114.21875c-3.7625,0 -6.71875,-2.95625 -6.71875,-6.71875v-80.625l63.82813,53.75l63.82813,-53.75v80.625c0,3.7625 -2.95625,6.71875 -6.71875,6.71875z" fill="#1abc9c" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M115.69688,97.42188l37.49063,51.6l-48.77812,-42.05937z" fill="#1abc9c" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M44.34375,134.375l35.74375,-33.19062c5.24062,-4.8375 13.16875,-4.70312 18.40937,0.13437l50.525,47.70313" fill="#1abc9c" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M153.1875,146.46875l-13.4375,-6.71875h-80.625c-3.7625,0 -6.71875,2.95625 -6.71875,6.71875v0c0,3.7625 2.95625,6.71875 6.71875,6.71875h87.34375c3.7625,0 6.71875,-2.95625 6.71875,-6.71875z" fill="#1abc9c" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"></path><path d="M44.34375,134.375l35.74375,-33.19062c5.24062,-4.8375 13.16875,-4.70312 18.40937,0.13437l50.525,47.70313" fill="none" stroke="#444b54" stroke-width="8.0625" stroke-linecap="round" stroke-linejoin="round"></path><path d="M104.40938,106.9625l48.77813,-41.11875v80.625c0,3.7625 -2.95625,6.71875 -6.71875,6.71875h-114.21875c-3.7625,0 -6.71875,-2.95625 -6.71875,-6.71875v-80.625l38.7,32.65313" fill="none" stroke="#444b54" stroke-width="8.0625" stroke-linecap="round" stroke-linejoin="round"></path></g></g>
+                    </svg>
+                    <div class="w-full py-8 fonts-sans text-white flex justify-center align-center items-center flex-col">
+                        <h1 class="py-4 text-xl font-semibold fonts-mono tracking-widest">BY EMAIL</h1>
+                        <p class="text-lg ">help@handsfree.io</p>
+                        <p class="text-lg ">support@handsfree.io</p>
+                        <h1 class="text-xl mt-4">Just send us your queries</h1>
+                        <p class="text-xl">on email</p>
+                        <h1 class="text-xl mt-4">We will get to you</h1>
+                    </div>
+                </div>
+                <div class="py-10 h-1/2 bg-purple-500 rounded-md shadow-lg w-1/4 flex flex-col items-center content-center align-center justify-center">
+                    <img src="https://img.icons8.com/cute-clipart/64/000000/address.png"/>
+                    <div class="w-full py-8 fonts-sans text-white flex justify-center align-center items-center flex-col">
+                        <h1 class="py-4 text-xl font-semibold fonts-mono tracking-widest">VISIT US</h1>
+                        <h1 class="text-xl">Office Timings</h1>
+                        <p class="text-md">Monday to Friday, 9am to 6pm PST</p>
+                        <p class="text-xl mt-2">1007, Galaxy Complex</p>
+                        <h1 class="text-xl">opposite canara bank </h1>
+                        <p class="text-lg">Mumbai - 4000016</p>
+                        <p class="text-lg">Maharashtra</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <!-- footer with ❤ mini -->
-        <div class="h-screen w-screen bg-gray-400">
-            Intro ka div
+        <div class="bg-purple-500 py-8 justify-center items-center align-center flex flex-col h-auto w-screen bg-gray-400">
+            <p class="text-2xl fonts-mono font-semibold text-white">Made with <span class="text-white">&hearts;</span> by</p>
+            <div class="flex py-2 space-x-10">
+                <h1 class="text-2xl text-white fonts-mono">Reuben Thomas  </h1>
+                <h1 class="text-2xl text-white fonts-mono">Jai Soneji  </h1>
+                <h1 class="text-2xl text-white fonts-mono">Sonia Thakur</h1>
+            </div>
         </div>
     </div>
     

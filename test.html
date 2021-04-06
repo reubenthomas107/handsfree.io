@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <title>Testing Handsfree.io </title>
+    
+    <style>
+        
+        svg {
+            width: 30px;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="flex flex-col overflow-x-hidden" >
+        <nav class="flex  justify-between bg-gray-900 w-screen h-16">
+            <ul  class="flex justify-start items-center content-center h-16 space-x-20 ml-32">
+
+                <a href="index.html"><li class="flex justify-center align-center items-center text-white text-2xl fonts-mono font-semibold"><span ><img src="https://img.icons8.com/color/50/000000/facial-recognition-scan.png"/></span>HandsFree.io</li></a>
+            </ul>
+            <ul class="flex justify-end items-center content-center h-16 space-x-12 mr-20">
+                <a href="#aboutsec"><li  class="flex text-white text-xl fonts-mono">About Us</li></a>
+                <a href="#howitworks"><li  class="flex text-white text-xl fonts-mono">How it works?</li></a>
+                <a href="/statistics.html" ><li  class="flex text-white text-xl fonts-mono">Statistics</li></a>
+                <li  class="flex text-white text-xl fonts-mono">Contact us</li>
+            </ul>
+        </nav>
+        <div class="h-screen w-screen bg-gray-800 flex flex-col justify-center align-center items-center ">
+            <svg viewBox="11.8 9 16 22" class="mouse"><path d="M20,21l4.5,8l-3.4,2l-4.6-8.1L12,29V9l16,12H20z"></path></svg>
+            <h1 id="test" class="flex justify-center align-center items-center text-center text-2xl bg-clip-text text-transparent  bg-gradient-to-r from-blue-600 to-green-400">Test this after installing our product !</h1>
+
+            <h1 id="test" class="flex justify-center align-center items-center text-center text-4xl bg-clip-text text-transparent  bg-gradient-to-r from-blue-600 to-green-400">Move your head around to test mouse cursor</h1>
+            <h1 id="test" class="flex justify-center align-center items-center text-center text-4xl bg-clip-text text-transparent  bg-gradient-to-r from-blue-600 to-green-400">Look down to scroll down</h1>
+            <img class="w-32" src="/photos/down.gif" alt="" srcset="">
+        </div>
+        <div class="h-screen w-screen flex flex-col justify-center items-center align-center">
+            <p class="text-6xl bg-clip-text text-transparent  bg-gradient-to-r from-blue-600 to-green-400">Almost there!</p>
+            <img class="w-48" src="/photos/down1.gif" alt="" srcset="">
+
+        </div>
+        <div class="flex-col h-screen w-screen flex justify-center items-center align-center">
+            <p class="text-6xl bg-clip-text text-transparent  bg-gradient-to-r from-blue-600 to-green-400">Congratulations! You did it</p>
+            <img src="/photos/congrats.gif" alt="" srcset="">
+        </div>
+    </div>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/perlin.js"></script>
+<script>
+
+const el = document.querySelector('.mouse');
+let lastMove = 0;
+
+function onMouseMove (e) {
+  x = e.clientX;
+  y = e.clientY;
+  updateMouse(x, y);
+  lastMove = Date.now();
+}
+
+function updateMouse (x, y) {
+    el.style.transform = `translate(${x}px, ${y}px)`;
+}
+
+function render (a) {
+  if (Date.now() - lastMove > 500) {
+    const noiseX = (noise.simplex3(2, 0, a*0.0004) + 1) / 2;
+    const noiseY = (noise.simplex3(10, 0, a*0.0004) + 1) / 2;
+    const x = noiseX * innerWidth;
+    const y = noiseY * innerHeight;
+    updateMouse(x, y);
+  }
+  
+  requestAnimationFrame(render);
+}
+
+window.addEventListener('mousemove', onMouseMove);
+requestAnimationFrame(render);
+</script>
+</body>
+</html>
