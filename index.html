@@ -19,7 +19,25 @@
     <style>
         html {
             scroll-behavior: smooth;
+        }#introimg,#dwnlbtn{
+            animation: fadeInAnimation ease 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
         }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        #welcome {
+            animation: fadeInAnimation ease 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+   
+            }
     </style>
 </head>
 <body>
@@ -41,14 +59,14 @@
         <!--Intro div -->
         <div class="h-screen w-screen bg-purple-500	flex ">
             <div class="w-1/2  ">
-                <h1 class="pt-20 pl-32 text-white text-4xl font-semibold">Welcome to <span class="text-purple-700">HandsFree.io</span></h1>
-                <p class=" pt-8 pl-32 fonts-mono text-justify text-white text-2xl font-light w-full ">A Program which can help people with disability to operate computer systems, just by using their facial expressions. A highly interactive and easy-to-use program. Download now to get started!</p>
-                <div class="ml-32 items-center align-center border hover:bg-purple-700  mt-10 justify-center flex alignborder-white rounded-lg w-64 h-16">
+                <h1 id="welcome" class="pt-20 pl-32 text-white text-4xl font-semibold">Welcome to <span class="text-purple-700">HandsFree.io</span></h1>
+                <p id="welcome" class=" pt-8 pl-32 fonts-mono text-justify text-white text-2xl font-light w-full ">A Program which can help people with disability to operate computer systems, just by using their facial expressions. A highly interactive and easy-to-use program. Download now to get started!</p>
+                <div id="dwnlbtn" class="ml-32 items-center align-center border hover:bg-purple-700  mt-10 justify-center flex alignborder-white rounded-lg w-64 h-16">
                     <a href="handsfree.io.zip"><button class="focus:outline-none  font-semibold  py-4 px-2  coursor-pointer  text-2xl text-white" ><span class="pr-2"><i class="fas fa-download"></i></span>Download</button>
                     </a>               
                 </div>
             </div>
-            <img class="w-1/2" src="/photos/intro.png" alt="">
+            <img id="introimg" class="w-1/2" src="/photos/intro.png" alt="">
         </div>
         
         <!-- product descriptionabout -->
