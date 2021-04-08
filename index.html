@@ -43,31 +43,36 @@
 <body>
     
     <div class="overflow-x-hidden">
-        <nav class="flex  h-20 md:justify-between bg-purple-600 md:w-screen md:h-16">
-            <!-- <div class="md:invisible flex flex-row justify-between">
-                <p id="hamburgerbtn" class="md:invisible bg-purple-800">
-                  menu
-                </p>
-             </div> -->
+        <nav class="flex  h-20 md:justify-between bg-purple-600 w-screen md:h-16">
             <ul class="w-48 flex  justify-start items-center content-center md:h-16 md:space-x-20 md:ml-32">
 
                 <a href="index.html"><li class="w-48 text-xl flex justify-center align-center items-center text-white md:text-2xl fonts-mono font-semibold"><span ><img src="https://img.icons8.com/color/50/000000/facial-recognition-scan.png"/></span>HandsFree.io</li></a>
             </ul>
-            <ul class="hidden md:flex flex md:justify-end md:items-center md:content-center md:h-16 md:space-x-12 md:mr-12">
+            <ul class=" w-screen h-screen flex-col md:flex-row hidden md:flex flex md:justify-end md:items-center md:content-center md:h-16 md:space-x-12 md:mr-12">
                 <a href="#aboutsec"><li  class="flex text-white text-xl fonts-mono">About Us</li></a>
                 <a href="#howitworks"><li  class="flex text-white text-xl fonts-mono">How it works?</li></a>
                 <a href="/statistics.html" ><li  class="flex text-white text-xl fonts-mono">Statistics</li></a>
                 <a href="#contactus"><li  class="flex text-white text-xl fonts-mono">Contact Us</li></a>
                 <a href="/test.html"><li  class="border px-4 py-2 rounded-md flex text-white text-xl fonts-mono">Demo</li></a>
             </ul>
-            <ul class="block h-full  w-full justify-end pr-6 text-white md:hidden fill-content text-white h-12 flex items-center content-center md:h-16 md:space-x-20 md:ml-32">
+            <ul id="menuOpen" class="cursor-pointer block h-full  w-full justify-end pr-6 text-white md:hidden fill-content text-white h-12 flex items-center content-center md:h-16 md:space-x-20 md:ml-32">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="24" height="24"
                 viewBox="0 0 172 172"
                 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M0,14.33333v14.33333h172v-14.33333zM0,78.83333v14.33333h172v-14.33333zM0,143.33333v14.33333h172v-14.33333z"></path></g></g>
                 </svg>            
             </ul>
+            
         </nav>
+        <div class="hidden flex flex-col align-center py-10 justify-start items-center menuitems w-screen h-screen">
+            <ul class="flex flex-col align-center justify-start items-center py-10 h-full w-full">
+                <a href="#aboutsec"><li  class="items py-4 w-full flex text-white text-xl fonts-mono">About Us</li></a>
+                <a href="#howitworks"><li  class="items py-4 w-full flex text-white text-xl fonts-mono">How it works?</li></a>
+                <a href="/statistics.html" ><li  class="items py-4 w-full flex text-white text-xl fonts-mono">Statistics</li></a>
+                <a href="#contactus"><li  class="items py-4 w-full flex text-white text-xl fonts-mono">Contact Us</li></a>
+                <a href="/test.html"><li  class="border px-4 py-2 rounded-md items py-4 w-full flex text-white text-xl fonts-mono">Demo</li></a>
+            </ul>
+        </div>
         <!--Intro div -->
         <div class="flex-col-reverse h-auto py-4 md:py-0 md:h-screen w-screen bg-purple-500	flex flex-col md:flex-row">
             <div class=" flex flex-col w-full  h-full md:w-1/2  ">
@@ -207,7 +212,7 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-
+    <script src="scripts/menu.js"></script>
     <script>
             document.addEventListener( 'DOMContentLoaded', function () {
                 new Splide( '.splide', {
