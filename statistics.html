@@ -20,6 +20,7 @@
         #chartdiv {
         width: 100%;
         height: 500px;
+        overflow:scroll;
       }
       #barchart {
         width: 100%;
@@ -30,41 +31,51 @@
 </head>
 <body>
     <div id="test" class="overflow-x-hidden">
-        <nav class="flex  justify-between bg-purple-600 w-screen h-16">
+        <nav class="flex  h-20 md:justify-between bg-purple-600 w-screen md:h-16">
             <ul class="w-56  flex  justify-start items-center content-center md:h-16 md:space-x-20 md:ml-32">
 
                 <a href="index.html" class="w-48"><li class="w-56 h-full text-xl flex justify-center align-center items-center text-white md:text-2xl fonts-mono font-semibold"><img src="/photos/logo.png"/></li></a>
             </ul>
-            <ul class="flex justify-end items-center content-center h-16 space-x-12 mr-12">
-                <a href="/index.html"><li  class="flex text-white text-xl fonts-mono">About Us</li></a>
-                <a href="/index.html"><li  class="flex text-white text-xl fonts-mono">How it works?</li></a>
+            <ul class=" w-screen h-screen flex-col md:flex-row hidden md:flex flex md:justify-end md:items-center md:content-center md:h-16 md:space-x-12 md:mr-12">
+                <a href="#aboutsec"><li  class="flex text-white text-xl fonts-mono">About Us</li></a>
+                <a href="#howitworks"><li  class="flex text-white text-xl fonts-mono">How it works?</li></a>
                 <a href="/statistics.html" ><li  class="flex text-white text-xl fonts-mono">Statistics</li></a>
-                <a href="/index.html"><li  class="flex text-white text-xl fonts-mono">Contact Us</li></a>
+                <a href="#contactus"><li  class="flex text-white text-xl fonts-mono">Contact Us</li></a>
                 <a href="/test.html"><li  class="border px-4 py-2 rounded-md flex text-white text-xl fonts-mono">Demo</li></a>
             </ul>
+            <ul id="menuOpen" class="cursor-pointer block h-full  w-full justify-end pr-6 text-white md:hidden fill-content text-white h-12 flex items-center content-center md:h-16 md:space-x-20 md:ml-32">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M0,14.33333v14.33333h172v-14.33333zM0,78.83333v14.33333h172v-14.33333zM0,143.33333v14.33333h172v-14.33333z"></path></g></g>
+                </svg>            
+            </ul>
+            
         </nav>
 
         <!-- Numbers div -->
-        <div class="flex py-6 space-x-10 border bg-purple-500 items-center justify-center align-center w-screen h-auto">
-            <div class="bg-purple-400 rounded-md shadow-lg w-1/4 flex flex-col items-center content-center align-center justify-center">
+        <div class="flex flex-col md:flex-row py-6 space-x-0 space-y-2 md:space-y-0 md:space-x-10 border bg-purple-500 items-center justify-start md:justify-center align-center w-screen h-screen md:h-auto">
+            <div class="bg-purple-400 rounded-md shadow-lg w-11/12 md:w-1/4 flex flex-col items-center content-center align-center justify-center">
                 <p class="nbr text-white fonts-sans font-semibold text-6xl">3898</p>
                 <p class="text-white text-xl fonts-sans">Number of Downloads</p>
             </div>
-            <div class="bg-purple-400 rounded-md shadow-lg w-1/4 flex flex-col items-center content-center align-center justify-center">
+            <div class="bg-purple-400 rounded-md shadow-lg  w-11/12 md:w-1/4 flex flex-col items-center content-center align-center justify-center">
                 <p class="nbr text-white fonts-sans font-semibold text-6xl">1846</p>
                 <p class="text-white text-xl fonts-sans">Active Users</p>
             </div>
-            <div class="bg-purple-400 rounded-md shadow-lg w-1/4 flex flex-col items-center content-center align-center justify-center">
+            <div class="bg-purple-400 rounded-md shadow-lg  w-11/12 md:w-1/4  flex flex-col items-center content-center align-center justify-center">
                 <p class="nbr text-white fonts-sans font-semibold text-6xl">2378</p>
                 <p class="text-white text-xl fonts-sans">Life Impacted</p>
             </div>
         </div>
 
         <!-- ---donut chart--- -->
-        <div class="w-screen h-2 bg-gradient-to-r from-purple-600 to-purple-300"></div>
+        <div class="w-11/12 md:w-screen h-2 bg-gradient-to-r from-purple-600 to-purple-300"></div>
         <div class="w-screen h-full flex flex-col py-6">
             <div class="bg-clip-text text-transparent  bg-gradient-to-r from-blue-600 to-green-400 h-auto py-8 fonts-mono text-center w-full font-bold text-3xl">The below chart explains the usage of our application in different states, in different Sectors</div>
-            <div class="" id="chartdiv"></div>           
+            <div class="">
+                <div  id="chartdiv"></div>
+            </div>           
         </div>
 
         <!-- -------bar chart------- -->
@@ -301,6 +312,7 @@
 
 
 
+<script src="scripts/menu.js"></script>
 
 
 
