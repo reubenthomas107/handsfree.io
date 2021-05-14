@@ -59,7 +59,11 @@ View more installation options [name](link)
 
 Start App
 
+* Download handsfree.zip file and unzip it
+* Install the following libraries - Numpy, OpenCV, PyAutoGUI, Dlib, Imutils
+* Run using following commands
  ```sh
-Install the following libraries - Numpy, OpenCV, PyAutoGUI, Dlib, Imutils
 python mouse-cursor-control.py 
  ```
+ 
+ * [Follow directions given in netlify.handsfree.app](https://handsfree.netlify.app)
